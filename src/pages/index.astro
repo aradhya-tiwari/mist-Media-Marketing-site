@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.svelte";
+import CTA from "../components/CTA.astro";
+import Main from "../components/Main.svelte";
+import Marquee from "../components/Marquee.astro";
+import Services from "../components/Services.astro";
+import Spacer from "../components/Spacer.astro";
+import About from "../components/About.astro";
+---
+
+<Layout title="Mist Media Marketing Agency">
+	<Header client:load />
+	<CTA />
+	<About />
+	<!-- <Main /> -->
+	<Marquee />
+	<Spacer />
+	<Services />
+</Layout>

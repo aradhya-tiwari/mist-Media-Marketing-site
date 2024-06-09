@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+const { elements } = Astro.props;
+const _imgs = await Astro.glob("../../public/brands/*.png");
+---
+
+<div class="w-[98vw] overflow-hidden mt-[10vh]">
+    <p
+        class="bg-bg text-center text-primary px-5 font-semibold md:text-4xl my-10 p-2 text-xl"
+    >
+        Brands We Have Worked With
+    </p>
+
+    <div
+        class="md:w-[4000px] w-[1400px] justify-between overflow-hidden flex"
+        id="marq"
+    >
+        {
+            _imgs.map((el) => (
+                <div class=" w-20 p-2 h-20 md:w-40 md:h-40  flex items-center text-4xl hover:scale-110 rounded-xl hover:bg-white/70 backdrop-blur-xl transition-all text-center elems">
+                    <Image src={el.default} alt="" srcset="" />
+                </div>
+            ))
+        }
+        {
+            _imgs.map((el) => (
+                <div class=" w-20 p-2 h-20 md:w-40 md:h-40  flex items-center text-4xl hover:scale-110 rounded-xl hover:bg-white/70 backdrop-blur-xl transition-all text-center elems">
+                    <Image src={el.default} alt="" srcset="" />
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<style>
+    #marq {
+        animation: 15s slide linear infinite;
+        pointer-events: none;
+    }
+    @keyframes slide {
+        0% {
+            translate: 0%;
+        }
+
+        100% {
+            translate: -50.65%;
+        }
+    }
+
+    .elems {
+        pointer-events: auto;
+    }
+    #marq:hover {
+        animation-play-state: paused;
+    }
+</style>

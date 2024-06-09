@@ -1,0 +1,59 @@
+---
+let dukkar = "& Astro";
+---
+
+<head>
+    <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+</head>
+<body
+    x-data=`{
+        message: "I Love Alpine ${dukkar}",
+        src: " favicon.png",
+    }`
+>
+    <h1 x-text="message">sdf</h1>
+    <button type="button" @click="message = 'Hello world'">Click</button>
+    <img src="{{src}}" alt="" srcset="" />
+</body>
+<!-- 
+    <div
+    x-data=`{
+        search: '',
+        
+        items: ['foo', 'bar', 'baz'],
+        
+        get filteredItems() {
+            return this.items.filter(
+            i => i.startsWith(this.search)
+            )
+        }
+    }`
+    >
+    <input x-model="search" placeholder="Search..." />
+    <p x-text=""></p>
+    <ul>
+        <template x-for="item in filteredItems" :key="item">
+            <li x-text="item"></li>
+        </template>
+    </ul>
+</div>
+
+<div
+x-data="{
+    search:'aaa',
+    items:['foo','bar','bax'],
+    get getRes(){   
+        return this.items.filter( 
+        i => i.startsWith(this.search)
+        )
+    }
+}"
+>
+<input type="text" name="" x-model="search" id="" placeholder="../" />
+<p x-text="getRes"></p>
+</div> -->
+
+<script></script>

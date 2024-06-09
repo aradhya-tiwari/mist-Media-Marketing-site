@@ -1,0 +1,28 @@
+---
+import Image from "astro/components/Image.astro";
+import imgPlaceholder from "../../../public/imagePlaceholder.svg";
+
+const { data } = Astro.props;
+---
+
+<a
+    href={data.slug}
+    class="flex md:m-10 m-2 md:p-5 p-2 w-full flex-col items-center bg-primary border border-gray-200 rounded-lg shadow md:flex-row md:max-w-6xl hover:bg-primary/40 dark:border-gray-700 dark:bg-primary/70 dark:hover:bg-primary/90"
+>
+    <Image
+        class="object-cover rounded-t-lg w-[60%] md:w-full md:max-w-40 min-w-20 md:h-auto md:rounded-none md:rounded-s-lg"
+        src={imgPlaceholder}
+        alt=""
+    />
+    <div class="flex w-full flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+            {data.title}
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-900">
+            {data.desc.slice(20)}...
+        </p>
+        <button class="bg-bg w-fit m-auto px-[20%] text-white p-2 rounded-lg">
+            Explore More</button
+        >
+    </div>
+</a>

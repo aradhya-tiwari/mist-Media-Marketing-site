@@ -1,0 +1,50 @@
+{
+    "slag": "photography",
+    "title": "Photography",
+    "images": [
+        "/imagePlaceholder.svg"
+    ],
+    "desc": "This is a Big long Discription for photography",
+    "sub_services": [
+        {
+            "title": "Wedding Photography",
+            "image": "./imagePlaceholder.svg",
+            "desc": "This is a discription of wedding photo graphy"
+        },
+        {
+            "title": "Product Photography",
+            "image": "./imagePlaceholder.svg",
+            "desc": "This is a discription of wedding photo graphy"
+        },
+        {
+            "title": "Lifestyle Photography",
+            "image": "./imagePlaceholder.svg",
+            "desc": "This is a discription of wedding photo graphy"
+        },
+        {
+            "title": "Food Photography",
+            "image": "./imagePlaceholder.svg",
+            "desc": "This is a discription of wedding photo graphy"
+        },
+        {
+            "title": "Industry Photography",
+            "image": "./imagePlaceholder.svg",
+            "desc": "This is a discription of wedding photo graphy"
+        },
+        {
+            "title": "Corporate Photography",
+            "image": "./imagePlaceholder.svg",
+            "desc": "This is a discription of wedding photography very nice ..."
+        },
+        {
+            "title": "Shoot Strategy",
+            "image": "./imagePlaceholder.svg",
+            "desc": "This is a discription of wedding photo graphy"
+        },
+        {
+            "title": "Video Editing",
+            "image": "./imagePlaceholder.svg",
+            "desc": "This is a discription of wedding photo graphy"
+        }
+    ]
+}

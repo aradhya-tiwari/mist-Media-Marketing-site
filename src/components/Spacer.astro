@@ -1,0 +1,52 @@
+<div class="w-full h-auto relative">
+    <div
+        class="w-full h-80 absolute bg-gradient-to-b from-bg to-transparent z-20"
+    >
+    </div>
+    <div class="left-0 right-0 w-full h-full opacity-20 absolute bg-bg -z-10">
+    </div>
+    <div class="imgBg"></div>
+    <!-- <img
+        src="/Spacer1.jpg"
+        alt=""
+        srcset=""
+        class="h-screen md:w-screen md:h-auto -z-20 opacity-40"
+    /> -->
+    <div
+        class="flex flex-col absolute top-[50%] items-center left-[50%] translate-x-[-50%] translate-y-[-50%]"
+    >
+        <h1
+            class="md:text-[9rem] text-8xl text-center text-primary/80 decoration-from-font"
+        >
+            Hire Us
+        </h1>
+        <div class="button top-96 right-10">
+            <a href="/contact">Contact Us</a>
+        </div>
+        <div class="button top-96 right-10">
+            <a href="/contact">Services</a>
+        </div>
+    </div>
+    <div
+        class="w-full h-80 bottom-0 absolute bg-gradient-to-t from-bg to-transparent z-20"
+    >
+    </div>
+</div>
+
+<style>
+    .button {
+        @apply cursor-pointer md:text-2xl mt-10 max-w-80 text-lg text-bg bg-primary/90 min-w-80 py-3 text-center rounded-lg;
+    }
+    .imgBg {
+        width: 100%;
+        height: 100vh;
+        border: 2px solid white;
+        background: #ccc;
+        background-image: url("/Spacer1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: -120;
+        opacity: 30%;
+    }
+</style>

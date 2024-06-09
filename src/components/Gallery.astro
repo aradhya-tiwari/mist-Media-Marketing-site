@@ -1,0 +1,136 @@
+---
+const { first, second, third, fourth } = Astro.props;
+---
+
+<h1 class="text-xl mt-20 p-10 underline md:text-4xl">Gallery</h1>
+<div class="grid grid-cols-2 md:grid-cols-4 p-5 border gap-4">
+    <div class="grid gap-4">
+        {
+            first.map((e) => (
+                <div>
+                    <img
+                        class=" h-auto max-w-full rounded-lg"
+                        src={e.default.src}
+                        alt=""
+                    />
+                </div>
+            ))
+        }
+        <!-- <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                alt=""
+            />
+        </div>
+        <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                alt=""
+            />
+        </div> -->
+    </div>
+    <div class="grid gap-4">
+        <!-- <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                alt=""
+            />
+        </div>
+        <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                alt=""
+            />
+        </div>
+        <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                alt=""
+            />
+        </div> -->
+        {
+            second.map((e) => (
+                <div>
+                    <img
+                        class=" h-auto max-w-full rounded-lg"
+                        src={e.default.src}
+                        alt=""
+                    />
+                </div>
+            ))
+        }
+    </div>
+    <div class="grid gap-4">
+        <!-- <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+                alt=""
+            />
+        </div>
+        <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+                alt=""
+            />
+        </div>
+        <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+                alt=""
+            />
+        </div> -->
+        {
+            third.map((e) => (
+                <div>
+                    <img
+                        class="h-auto max-w-full rounded-lg"
+                        src={e.default.src}
+                        alt=""
+                    />
+                </div>
+            ))
+        }
+    </div>
+    <div class="grid gap-4">
+        <!-- <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+                alt=""
+            />
+        </div>
+        <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+                alt=""
+            />
+        </div>
+        <div>
+            <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+                alt=""
+            />
+        </div> -->
+        {
+            fourth.map((e) => (
+                <div>
+                    <img
+                        class="h-auto max-w-full rounded-lg"
+                        src={e.default.src}
+                        alt=""
+                    />
+                </div>
+            ))
+        }
+    </div>
+</div>
