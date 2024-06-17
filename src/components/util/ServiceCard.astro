@@ -1,14 +1,17 @@
 ---
+import { Image } from "astro:assets";
 const { title, description, src = "/imagePlaceholder.svg", link } = Astro.props;
 function truncate(str: string, len: number) {
     let text = str.slice(0, len);
     if (str.length > len) return text + "...";
     else return text;
 }
-let img = (await import(`../../assets/Main${src}`)) || {
-    default: { src: "/imagePlaceholder.svg" },
-};
-console.log(img);
+
+const _img = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/assets/Main/*.jpg",
+);
+let img = _img[`/src/assets/Main${src || "/imagePlaceholder.svg"}`]() as any;
+// console.log(img);
 ---
 
 <div
@@ -16,7 +19,13 @@ console.log(img);
     class="flex flex-col justify-between w-60 md:w-80 rounded-lg md:h-[500px] h-[450px] md:m-12 m-6 border-2 border-secondary shadow-lg hover:scale-110 transition-all hover:shadow-primary bg-bg"
 >
     <div class="w-2/3 h-[29%] m-auto my-[1%] overflow-hidden">
-        <img src={img.default.src} alt="" srcset="" class="h-full m-auto" />
+        <Image
+            src={img || "/imagePlaceholder.svg"}
+            alt=""
+            width={100}
+            height={1}
+            class="h-full m-auto"
+        />
     </div>
     <div
         class="w-full h-[50%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary hover:h-[90%] transition-all"

@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 const {
     name = "name",
     image,
@@ -7,17 +9,20 @@ const {
     service = "Serivce",
     description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, animi itaque? Suscipit excepturi vero, sunt minima eveniet praesentium. Quasi obcaecati voluptates fugit iusto dignissimos officia modi numquam suscipit. Architecto deserunt magni consequuntur!",
 } = Astro.props;
-let img =
-    (await import(`../../assets/reviewsImage/${image || "default.svg"}`)) ||
-    "/imagePlaceholder.svg";
-// console.log(img);
+
+let getImg = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/assets/reviewsImage/*.jpg",
+);
+console.log(getImg);
+console.log("/src/assets/reviewsImage/" + image);
+let img = getImg["/src/assets/reviewsImage/" + image]() as any;
 ---
 
 <article class="md:w-96 m-2 md:m-5 border bg-secondary p-2 rounded-lg">
     <div class="flex items-center mb-4">
-        <img
+        <Image
             class="w-10 h-10 me-4 rounded-full"
-            src={`${img.default.src}`}
+            src={img || "/imagePlaceholder.svg"}
             alt=""
         />
         <div class="font-medium dark:text-white">

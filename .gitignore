@@ -3,7 +3,7 @@ dist/
 node_modules
 # generated types
 .astro/
-
+.wrangler
 # dependencies
 node_modules/
 
