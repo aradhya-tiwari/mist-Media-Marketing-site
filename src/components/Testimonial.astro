@@ -1,0 +1,54 @@
+---
+import Reviews from "../components/util/Reviews.astro";
+
+const rvs = [
+    {
+        name: "Founder",
+        description:
+            "A huge shoutout to Mist Media Marketing for their incredible work on our cafe's Instagram page! Not only have they curated engaging content that perfectly captures our cafe's vibe, but they've also been instrumental in brainstorming marketing campaigns that have really boosted our business. Their expertise doesn't stop there – they've even helped us organize various workshops at our cafe space, creating a buzz in the community. Couldn't be happier with their dedication and results",
+        company: "Cafe at Ease",
+        image: "1.jpg",
+        service: "marketing & content",
+    },
+    {
+        name: "Shubham Rai",
+        description:
+            "Mist Media shines in the realm of marketing, effortlessly blending creativity and reliability. Their team was instrumental in guiding our architecture and interior firm towards success, delivering results that exceeded our expectations. Notably, their adept handling of our Instagram page elevated our brand's presence in subtle yet impactful ways. For architecture and interior firms seeking a trusted marketing partner, Mist Media is the perfect choice.",
+        company: "RAI Architect",
+        image: "2.jpg",
+        service: "digital marketing",
+    },
+];
+---
+
+<!-- 
+const {
+    name = "name",
+    image = "/imagePlaceholder.svg",
+    company = "company",
+    title = "title",
+    service = "Serivce",
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, animi itaque? Suscipit excepturi vero, sunt minima eveniet praesentium. Quasi obcaecati voluptates fugit iusto dignissimos officia modi numquam suscipit. Architecto deserunt magni consequuntur!",
+} = Astro.props; -->
+<p
+    class="bg-bg text-center text-primary px-5 font-semibold md:text-4xl my-10 p-2 text-xl"
+>
+    What our Customers has to say :-)
+</p>
+
+<div class="flex-wrap flex">
+    {
+        rvs.map((el) => (
+            <Reviews
+                name={el.name}
+                description={el.description}
+                company={el.company}
+                service={el.service}
+                image={el.service}
+            />
+        ))
+    }
+    <Reviews />
+    <Reviews />
+    <Reviews />
+</div>

@@ -1,5 +1,8 @@
 ---
 import ServiceCard from "./util/ServiceCard.astro";
+const services = await Astro.glob("../data/service/*.json");
+// let services = [];
+const { data } = Astro.props;
 ---
 
 <h1
@@ -11,10 +14,11 @@ import ServiceCard from "./util/ServiceCard.astro";
     <div class="overflow-x-scroll no-scrollbar">
         <div class="flex w-max bg-scroll">
             {
-                [1, 2, 3, 4, 5].map((el) => (
+                services.map((el) => (
                     <ServiceCard
-                        title={`Service ${el}`}
-                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enimaccusamus adipisci earum voluptate quia quae voluptatem expeditaoptio voluptatum sapiente itaque omnis mollitia et necessitatibusinventore, corrupti iure dolorem! Voluptatibus, corrupti explicabo?"
+                        title={`${el.title} Service`}
+                        description={el.desc.slice(0, 50)}
+                        link={el.slag}
                     />
                 ))
             }

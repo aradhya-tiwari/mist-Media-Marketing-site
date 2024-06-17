@@ -1,5 +1,5 @@
 ---
-const { title, description, src = "/imagePlaceholder.svg" } = Astro.props;
+const { title, description, src = "/imagePlaceholder.svg", link } = Astro.props;
 function truncate(str: string, len: number) {
     let text = str.slice(0, len);
     if (str.length > len) return text + "...";
@@ -15,13 +15,13 @@ function truncate(str: string, len: number) {
         <img src={src} alt="" srcset="" class="h-full m-auto" />
     </div>
     <div
-        class="w-full h-[60%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary hover:h-[90%] transition-all"
+        class="w-full h-[50%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary hover:h-[90%] transition-all"
     >
-        <h1 class="m-5 md:text-3xl text-xl font-semibold font-primaryFont">
+        <h1 class="m-5 md:text-2 xl text-xl font-semibold font-primaryFont">
             {title}
         </h1>
         <p
-            class="relative mx-5 mt-5 md:text-lg text-sm h-[60%] tracking-wider overflow-hidden"
+            class="relative mx-5 mt-5 md:text-lg text-sm h-auto pb-10 tracking-wider overflow-hidden"
         >
             {description}
             <span
@@ -32,7 +32,15 @@ function truncate(str: string, len: number) {
             id="reachOut"
             class="md:text-xl hidden cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold hover:scale-110 transition-all"
         >
-            <a href="/contact">Reach Out to Us</a>
+            <a href={`/contact?for=Enquiry for ${title} service`}
+                >Reach Out to Us</a
+            >
+        </div>
+        <div
+            id="reachOut"
+            class="md:text-xl hidden cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold hover:scale-110 transition-all"
+        >
+            <a href={`/services/${link}`}>More Info</a>
         </div>
     </div>
 </div>

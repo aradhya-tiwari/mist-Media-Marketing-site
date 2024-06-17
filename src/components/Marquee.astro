@@ -17,14 +17,14 @@ const _imgs = await Astro.glob("../../public/brands/*.png");
     >
         {
             _imgs.map((el) => (
-                <div class=" w-20 p-2 h-20 md:w-40 md:h-40  flex items-center text-4xl hover:scale-110 rounded-xl hover:bg-white/70 backdrop-blur-xl transition-all text-center elems">
+                <div class="  p-2  w-40 h-40  flex items-center text-4xl hover:scale-110 rounded-xl hover:bg-white/70 backdrop-blur-xl transition-all text-center elems">
                     <Image src={el.default} alt="" srcset="" />
                 </div>
             ))
         }
         {
             _imgs.map((el) => (
-                <div class=" w-20 p-2 h-20 md:w-40 md:h-40  flex items-center text-4xl hover:scale-110 rounded-xl hover:bg-white/70 backdrop-blur-xl transition-all text-center elems">
+                <div class="p-2 w-40 h-40  flex items-center text-4xl hover:scale-110 rounded-xl hover:bg-white/70 backdrop-blur-xl transition-all text-center elems">
                     <Image src={el.default} alt="" srcset="" />
                 </div>
             ))

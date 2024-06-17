@@ -1,9 +1,9 @@
 {
-    "slag": "/digi-marketing",
+    "slag": "digi-marketing",
     "title": "Digital Marketing",
-    "base_image": "/imagePlaceholder.svg",
+    "base_image": "/Digital Marketing-min.jpg",
     "images": [
-        "/imagePlaceholder.svg"
+        "/Main/Digital Marketing-min.jpg"
     ],
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?",
     "sub_services": [

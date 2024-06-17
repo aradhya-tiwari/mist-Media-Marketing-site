@@ -1,72 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
-   version="1.1"
-   id="svg1"
-   width="494.66666"
-   height="201.33333"
-   viewBox="0 0 494.66666 201.33333"
-   sodipodi:docname="logo_white.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+<svg version="1.1" id="svg1" width="494.66666" height="201.33333" viewBox="0 0 494.66666 201.33333"
+   sodipodi:docname="logo_white.svg" inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1" />
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="2.5447071"
-     inkscape:cx="229.69244"
-     inkscape:cy="141.6666"
-     inkscape:window-width="2160"
-     inkscape:window-height="1334"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g1" />
-  <g
-     inkscape:groupmode="layer"
-     inkscape:label="Image"
-     id="g1">
-    <path
-       style="fill:#ffcc00;stroke-width:1.04073"
-       d="m 29.149218,110.79356 24.898183,0.7193 0.646706,-59.340307 c 0,0 32.98201,47.472081 32.98201,47.831897 v 0.35961 l 16.814353,-0.35961 c 0,0 31.6886,-48.551164 31.04191,-48.191533 l -0.64671,0.359636 -0.64671,56.103447 27.80836,42.07773 V 16.568378 L 133.91561,16.208743 96.083295,72.671918 58.574344,15.849111 29.795924,16.208743 Z"
-       id="path1"
-       sodipodi:nodetypes="cccsccsccccccccc" />
-    <path
-       style="fill:#ffcc00;stroke-width:1.04073"
-       d="m 181.77186,16.208743 0.32336,132.706347 24.57483,-36.32352 0.64669,-96.742459 z"
-       id="path2"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="fill:#ffcc00;stroke-width:1.04073"
-       d="m 341.8316,16.568378 -18.75448,21.218655 -65.3173,-0.35964 -6.14371,8.631325 6.14371,9.710225 h 64.99396 l 19.40118,27.692114 -18.10779,28.411563 -99.91607,0.71895 18.10777,-20.858856 65.64066,-0.7192 5.49702,-8.271724 -6.14372,-8.271673 H 241.26881 L 222.51433,46.418353 241.59217,16.568378 Z"
-       id="path3" />
-    <path
-       style="fill:#ffcc00;stroke-width:1.04073"
-       d="m 353.79566,16.208743 18.75448,22.6572 24.89818,-0.35963 0.97007,111.487747 26.51494,-38.8409 V 37.787033 h 26.51495 l 18.10777,-21.218655 z"
-       id="path4" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.6413px;font-family:Gadugi;-inkscape-font-specification:'Gadugi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:2.05349;stroke-dasharray:none"
-       x="88.617256"
-       y="250.62317"
-       id="text1"
-       transform="scale(1.3611199,0.73468913)"><tspan
-         sodipodi:role="line"
-         id="tspan1"
-         x="88.617256"
-         y="250.62317"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.6413px;font-family:Gadugi;-inkscape-font-specification:'Gadugi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:2.05349;stroke-dasharray:none">Media Marketing</tspan></text>
-  </g>
+   <defs id="defs1" />
+   <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
+      inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"
+      showgrid="false" inkscape:zoom="2.5447071" inkscape:cx="229.69245" inkscape:cy="142.05957"
+      inkscape:window-width="2160" inkscape:window-height="1334" inkscape:window-x="-11" inkscape:window-y="-11"
+      inkscape:window-maximized="1" inkscape:current-layer="g1" />
+   <g inkscape:groupmode="layer" inkscape:label="Image" id="g1">
+      <path style="fill:#ffcc00;stroke-width:1.04073"
+         d="m 29.149218,110.79356 24.898183,0.7193 0.646706,-59.340307 c 0,0 32.98201,47.472081 32.98201,47.831897 v 0.35961 l 16.814353,-0.35961 c 0,0 31.6886,-48.551164 31.04191,-48.191533 l -0.64671,0.359636 -0.64671,56.103447 27.80836,42.07773 V 16.568378 L 133.91561,16.208743 96.083295,72.671918 58.574344,15.849111 29.795924,16.208743 Z"
+         id="path1" sodipodi:nodetypes="cccsccsccccccccc" />
+      <path style="fill:#ffcc00;stroke-width:1.04073"
+         d="m 181.77186,16.208743 0.32336,132.706347 24.57483,-36.32352 0.64669,-96.742459 z" id="path2"
+         sodipodi:nodetypes="ccccc" />
+      <path style="fill:#ffcc00;stroke-width:1.04073"
+         d="m 341.8316,16.568378 -18.75448,21.218655 -65.3173,-0.35964 -6.14371,8.631325 6.14371,9.710225 h 64.99396 l 19.40118,27.692114 -18.10779,28.411563 -99.91607,0.71895 18.10777,-20.858856 65.64066,-0.7192 5.49702,-8.271724 -6.14372,-8.271673 H 241.26881 L 222.51433,46.418353 241.59217,16.568378 Z"
+         id="path3" />
+      <path style="fill:#ffcc00;stroke-width:1.04073"
+         d="m 353.79566,16.208743 18.75448,22.6572 24.89818,-0.35963 0.97007,111.487747 26.51494,-38.8409 V 37.787033 h 26.51495 l 18.10777,-21.218655 z"
+         id="path4" />
+      <text xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.9045px;font-family:Gadugi;-inkscape-font-specification:'Gadugi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:1.82542;stroke-dasharray:none"
+         x="120.35947" y="210.90126" id="text1" transform="scale(1.2099498,0.82648056)">
+         <tspan sodipodi:role="line" id="tspan1" x="120.35947" y="210.90126"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.9045px;font-family:Gadugi;-inkscape-font-specification:'Gadugi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:1.82542;stroke-dasharray:none">
+            Media Marketing</tspan>
+      </text>
+   </g>
 </svg>

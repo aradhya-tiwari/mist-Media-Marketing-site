@@ -2,8 +2,9 @@
     "slag": "photography",
     "title": "Photography",
     "images": [
-        "/imagePlaceholder.svg"
+        "ambiance"
     ],
+    "base_image": "/Videography & Photography-min.jpg",
     "desc": "This is a Big long Discription for photography",
     "sub_services": [
         {

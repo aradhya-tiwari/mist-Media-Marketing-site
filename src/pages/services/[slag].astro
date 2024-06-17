@@ -5,7 +5,6 @@ import Card from "../../components/Card.astro";
 import { Image } from "astro:assets";
 import Gallery from "../../components/Gallery.astro";
 
-const { slag } = Astro.params;
 let data = {};
 export async function getStaticPaths() {
     const pages = await Astro.glob("../../data/service/*.json");
@@ -32,7 +31,12 @@ for (let i = 0; i < GImages.length; i++) {
     else if (i >= 12 && i < 16) img4.push(GImages[i]);
 }
 console.log(GImages[0]);
+const { slag } = Astro.params;
 const { e } = Astro.props;
+
+const getImg = import.meta.glob("../../assets/Main/*.jpg");
+let imgg = getImg["../../assets/Main" + e.base_image]();
+// console.log(imgg);
 ---
 
 <style>
@@ -40,22 +44,25 @@ const { e } = Astro.props;
         @apply absolute m-2 bg-primary rounded-full bottom-[50%] translate-y-[50%] w-14 h-14;
     }
 </style>
+
 <Layout title={e.title + "Service"}>
     <Header client:load />
     <div class="text-white">
         <div class="md:pt-20 h-screen relative text-white p-2 bg-bg">
             <Image
-                src={e.image || "/imagePlaceholder.svg"}
+                src={(imgg as unknown as string) || "/imagePlaceholder.svg"}
                 alt=""
                 width="100"
                 height={1}
                 class="h-[80vh] w-[80vw] m-auto"
             />
-            <div class="w-full h-full bg-black/20 top-0 absolute">
+            <div
+                class="w-full h-full absolute backdrop-blur-[1px] bg-black/50 top-0"
+            >
                 <h1
-                    class="text-center m-auto text-6xl -translate-x-1/2 -translate-y-1/2 top-[50%] absolute left-[50%]"
+                    class="text-center shadow-lg shadow-bg text-5xl md:text-6xl -translate-x-1/2 -translate-y-1/2 top-[50%] absolute left-[50%]"
                 >
-                    Hello world
+                    {e.title}
                 </h1>
             </div>
         </div>
@@ -79,32 +86,52 @@ const { e } = Astro.props;
         </div>
 
         <Gallery first={img1} second={img2} third={img3} fourth={img4} />
-        <!-- Section -->
-        <div class="relative">
-            <div
-                class="w-full mt-10 relative overflow-auto h-auto md:my-10 py-1 md:px-10 p-1 bg-secondary no-scrollbar border border-[#525350]"
-            >
-                <div
-                    class="bg-bg rounded-lg relative p-2 md:p-5 m-auto w-full overflow-hidden no-scrollbar"
-                >
-                    <div class="flex overflow-auto" id="slideIt">
-                        {
-                            e.sub_services.map((el) => (
-                                <Card title={el.title} explanation={el.desc} />
-                            ))
-                        }
+        <!-- sub service Section -->
+        {
+            e.sub_services ? (
+                <div class="relative">
+                    <div class="w-full mt-10 relative overflow-auto h-auto md:my-10 py-1 md:px-10 p-1 bg-secondary no-scrollbar border border-[#525350]">
+                        <div class="bg-bg rounded-lg relative p-2 md:p-5 m-auto w-full overflow-hidden no-scrollbar">
+                            <div class="flex overflow-auto" id="slideIt">
+                                {e.sub_services.map((el) => (
+                                    <Card
+                                        title={el.title}
+                                        explanation={el.desc}
+                                    />
+                                ))}
+                            </div>
+                        </div>
                     </div>
+
+                    <button
+                        id="scroll-left"
+                        class="md:block hidden btn-scroll left-0"
+                    >
+                        <img
+                            src="/arrow.svg"
+                            alt=""
+                            srcset=""
+                            class="w-full h-full"
+                        />
+                    </button>
+                    <button
+                        id="scroll-right"
+                        class="hidden md:block btn-scroll rotate-180 right-0"
+                    >
+                        <img
+                            src="/arrow.svg"
+                            alt=""
+                            srcset=""
+                            class="w-full h-full"
+                        />
+                    </button>
                 </div>
-            </div>
-            <button id="scroll-left" class="md:block hidden btn-scroll left-0"
-                ><img src="/arrow.svg" alt="" srcset="" class="w-full h-full" />
-            </button>
-            <button
-                id="scroll-right"
-                class="hidden md:block btn-scroll rotate-180 right-0"
-                ><img src="/arrow.svg" alt="" srcset="" class="w-full h-full" />
-            </button>
-        </div>
+            ) : (
+                <p class="text-white">
+                    <br />
+                </p>
+            )
+        }
     </div>
 </Layout>
 <script>

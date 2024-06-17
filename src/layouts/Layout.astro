@@ -3,36 +3,35 @@ interface Props {
 	title: string;
 }
 import "../styles/base.css";
+import Footer from "../components/Footer.astro";
 const { title } = Astro.props;
 export const prerender = true;
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Astro description" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/logo_white.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{title}</title>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css?family=Montserrat"
-			rel="stylesheet"
-		/>
-	</head>
-	<body class="bg-bg">
-		<slot />
-	</body>
-	<style>
-		body {
-			font-family: "Montserrat";
-		}
-		html {
-			scroll-behavior: smooth;
-		}
-	</style>
-</html>
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat"
+		rel="stylesheet"
+	/>
+</head>
+<body class="bg-bg">
+	<slot />
+	<Footer />
+</body>
+<style>
+	body {
+		font-family: "Montserrat";
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+</style>
