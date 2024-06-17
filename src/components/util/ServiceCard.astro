@@ -5,6 +5,10 @@ function truncate(str: string, len: number) {
     if (str.length > len) return text + "...";
     else return text;
 }
+let img = (await import(`../../assets/Main${src}`)) || {
+    default: { src: "/imagePlaceholder.svg" },
+};
+console.log(img);
 ---
 
 <div
@@ -12,7 +16,7 @@ function truncate(str: string, len: number) {
     class="flex flex-col justify-between w-60 md:w-80 rounded-lg md:h-[500px] h-[450px] md:m-12 m-6 border-2 border-secondary shadow-lg hover:scale-110 transition-all hover:shadow-primary bg-bg"
 >
     <div class="w-2/3 h-[29%] m-auto my-[1%] overflow-hidden">
-        <img src={src} alt="" srcset="" class="h-full m-auto" />
+        <img src={img.default.src} alt="" srcset="" class="h-full m-auto" />
     </div>
     <div
         class="w-full h-[50%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary hover:h-[90%] transition-all"
