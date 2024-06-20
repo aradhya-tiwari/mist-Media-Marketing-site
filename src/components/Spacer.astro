@@ -1,3 +1,8 @@
+---
+import image from "../../public/Spacer1.jpg";
+import { Image } from "astro:assets";
+---
+
 <div class="w-full h-auto relative">
     <div
         class="w-full h-80 absolute bg-gradient-to-b from-bg to-transparent z-20"
@@ -5,7 +10,9 @@
     </div>
     <div class="left-0 right-0 w-full h-full opacity-20 absolute bg-bg -z-10">
     </div>
-    <div class="imgBg"></div>
+    <div class="imgBg">
+        <Image src={image} alt="" />
+    </div>
     <!-- <img
         src="/Spacer1.jpg"
         alt=""
@@ -31,22 +38,19 @@
         class="w-full md:h-64 h-32 bottom-0 absolute bg-gradient-to-t from-bg to-transparent z-20"
     >
     </div>
-</div>
 
-<style>
-    .button {
-        @apply cursor-pointer md:text-2xl mt-10 max-w-80 text-lg text-bg bg-primary/90 min-w-80 py-3 text-center rounded-lg;
-    }
-    .imgBg {
-        width: 100%;
-        height: 100vh;
-        border: 2px solid white;
-        background: #ccc;
-        background-image: url("/Spacer1.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        z-index: -120;
-        opacity: 30%;
-    }
-</style>
+    <style>
+        .button {
+            @apply cursor-pointer md:text-2xl mt-10 max-w-80 text-lg text-bg bg-primary/90 min-w-80 py-3 text-center rounded-lg;
+        }
+        .imgBg {
+            width: 100%;
+
+            border: 2px solid white;
+            background: #ccc;
+            overflow: none;
+            z-index: -102;
+            opacity: 30%;
+        }
+    </style>
+</div>

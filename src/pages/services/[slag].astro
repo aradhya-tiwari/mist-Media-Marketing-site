@@ -17,7 +17,30 @@ export async function getStaticPaths() {
     }));
 }
 
-const GImages = await Astro.glob("../../assets/ambiance/*");
+const { slag } = Astro.params;
+const { e } = Astro.props;
+
+let GImages;
+switch (e.slag) {
+    case "digi-marketing":
+        GImages = await Astro.glob("../../assets/Main/*");
+        break;
+    case "photography":
+        GImages = await Astro.glob("../../assets/portfolio/*");
+        break;
+    case "graphics":
+        GImages = await Astro.glob("../../assets/ambiance/*");
+        break;
+    case "weddingshoot":
+        GImages = await Astro.glob("../../assets/weddings/*");
+        break;
+    case "prbranding":
+        GImages = await Astro.glob("../../assets/ambiance/*");
+        break;
+    case "foodphotography":
+        GImages = await Astro.glob("../../assets/food/*");
+        break;
+}
 // const GImages = import.meta.glob("../../assets/ambiance/*");
 
 let img1: Array<any> = [],
@@ -32,8 +55,6 @@ for (let i = 0; i < GImages.length; i++) {
     else if (i >= 12 && i < 16) img4.push(GImages[i]);
 }
 // console.log(GImages[0]);
-const { slag } = Astro.params;
-const { e } = Astro.props;
 
 const getImg = import.meta.glob<{ default: ImageMetadata }>(
     "/src/assets/Main/*.jpg",
@@ -77,11 +98,6 @@ let imgg = getImg["/src/assets/Main" + e.base_image]() as any;
         <div
             class="bg-secondary py-20 md:flex justify-around md:px-10 rounded-3xl md:w-[80%] w-[98%] m-auto"
         >
-            <img
-                src={e.images[0]}
-                alt=""
-                class="h-full w-full m-auto md:m-0 max-w-48 bg-cover"
-            />
             <p
                 class="md:text-xl text-sm m-5 md:pr-10 bg-secondary tracking-wider"
             >

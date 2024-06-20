@@ -1,4 +1,5 @@
 ---
+// import wedding from `../../assets/weddings/${'wedding.jpg'}`
 import { Image } from "astro:assets";
 const { title, description, src = "/imagePlaceholder.svg", link } = Astro.props;
 function truncate(str: string, len: number) {
@@ -11,24 +12,18 @@ const _img = import.meta.glob<{ default: ImageMetadata }>(
     "/src/assets/Main/*.jpg",
 );
 let img = _img[`/src/assets/Main${src || "/imagePlaceholder.svg"}`]() as any;
-// console.log(img);
+console.log(_img["/src/assets/Main/wedding.jpg"]());
 ---
 
 <div
     id="serv"
-    class="flex flex-col justify-between w-60 md:w-80 rounded-lg md:h-[500px] h-[450px] md:m-12 m-6 border-2 border-secondary shadow-lg hover:scale-110 transition-all hover:shadow-primary bg-bg"
+    class="flex relative flex-col justify-between w-60 md:w-80 rounded-lg md:h-[500px] h-[450px] md:m-12 m-6 border-2 border-secondary shadow-lg hover:scale-110 transition-all hover:shadow-primary bg-bg"
 >
-    <div class="w-2/3 h-[29%] m-auto my-[1%] overflow-hidden">
-        <Image
-            src={img || "/imagePlaceholder.svg"}
-            alt=""
-            width={100}
-            height={1}
-            class="h-full m-auto"
-        />
+    <div class="w-[80%] h-[50%] m-auto my-[1%] overflow-hidden">
+        <Image src={img || "/imagePlaceholder.svg"} alt="" />
     </div>
     <div
-        class="w-full h-[50%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary hover:h-[90%] transition-all"
+        class="w-full absolute bottom-0 h-[60%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary hover:h-[90%] transition-all"
     >
         <h1 class="m-5 md:text-2 xl text-xl font-semibold font-primaryFont">
             {title}
@@ -41,19 +36,21 @@ let img = _img[`/src/assets/Main${src || "/imagePlaceholder.svg"}`]() as any;
                 class="bg-gradient-to-b from-transparent to-secondary w-full absolute h-10 bottom-0 left-0"
             ></span>
         </p>
-        <div
-            id="reachOut"
-            class="md:text-xl hidden cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold hover:scale-110 transition-all"
-        >
-            <a href={`/contact?for=Enquiry for ${title} service`}
-                >Reach Out to Us</a
+        <div class="absolute bottom-5 w-full">
+            <div
+                id="reachOut"
+                class="md:text-xl hidden cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold hover:scale-110 transition-all"
             >
-        </div>
-        <div
-            id="reachOut"
-            class="md:text-xl hidden cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold hover:scale-110 transition-all"
-        >
-            <a href={`/services/${link}`}>More Info</a>
+                <a href={`/contact?for=Enquiry for ${title} service`}
+                    >Reach Out to Us</a
+                >
+            </div>
+            <div
+                id="reachOut"
+                class="md:text-xl hidden cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold hover:scale-110 transition-all"
+            >
+                <a href={`/services/${link}`}>More Info</a>
+            </div>
         </div>
     </div>
 </div>

@@ -3,39 +3,7 @@
     "title": "PR and Branding",
     "base_image": "/PR & Branding-min.jpg",
     "images": [
-        "/Main/"
+        "portfolio"
     ],
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?",
-    "sub_services": [
-        {
-            "title": "Organic Marketing",
-            "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
-        },
-        {
-            "title": "Advertisement",
-            "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
-        },
-        {
-            "title": "Social Media Marketing",
-            "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
-        },
-        {
-            "title": "Influencer Marketing",
-            "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
-        },
-        {
-            "title": "Performance Marketing",
-            "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
-        },
-        {
-            "title": "Content Marketing",
-            "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
-        }
-    ]
+    "desc": "Enhance your brand with our PR & Branding services. We specialize in Public Relations for startups and marketing firms, ensuring strategic communication to dominate your branding area. Our comprehensive approach includes media relations, reputation management, and targeted campaigns to build and maintain a positive public image. By leveraging industry insights and innovative strategies, we help you connect with your audience and achieve your branding goals. Let us take your brand to new heights!"
 }

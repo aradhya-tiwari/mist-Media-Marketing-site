@@ -3,39 +3,39 @@
     "title": "Digital Marketing",
     "base_image": "/Digital Marketing-min.jpg",
     "images": [
-        "/Main/Digital Marketing-min.jpg"
+        "../../assets/ambiance/*.jpg"
     ],
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?",
+    "desc": "Boost your business with our expert Digital Marketing services! We excel in online marketing to enhance your internet presence and turn clicks into loyal customers. Our tailored strategies ensure maximum visibility, engagement, and conversion rates, driving growth and success. Let’s work together to grow your brand, achieve your online goals, and surpass your competition!",
     "sub_services": [
         {
             "title": "Organic Marketing",
             "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
+            "desc": "Build you brand through organic reach via social media"
         },
         {
             "title": "Advertisement",
             "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
+            "desc": "Advertise your Content across platforms"
         },
         {
             "title": "Social Media Marketing",
             "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
+            "desc": "Give you an exceptional online presence"
         },
         {
             "title": "Influencer Marketing",
             "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
+            "desc": "Hire Influencer to endorse your brand"
         },
         {
             "title": "Performance Marketing",
             "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
+            "desc": "Use performance marketing strategies to reach wider audience"
         },
         {
             "title": "Content Marketing",
             "image": "./imagePlaceholder.svg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque, ad reprehenderit distinctio dolor mollitia doloremque! Reiciendis ratione beatae veniam doloremque sunt provident perspiciatis, fugit totam aliquid, cupiditate consequatur nesciunt, quibusdam cum assumenda dolorem accusamus officiis a. Incidunt perspiciatis sunt consectetur neque corporis porro harum voluptate quod animi, est cumque?"
+            "desc": "Provide SEO friendly content as Content is the king"
         }
     ]
 }
