@@ -3,7 +3,7 @@ import image from "../../public/Spacer1.jpg";
 import { Image } from "astro:assets";
 ---
 
-<div class="w-full h-auto relative">
+<div class="w-full h-screen relative overflow-hidden">
     <div
         class="w-full h-80 absolute bg-gradient-to-b from-bg to-transparent z-20"
     >
@@ -46,7 +46,6 @@ import { Image } from "astro:assets";
         .imgBg {
             width: 100%;
 
-            border: 2px solid white;
             background: #ccc;
             overflow: none;
             z-index: -102;

@@ -7,15 +7,15 @@ const { data } = Astro.props;
 
 <a
     href={"/services/" + data.slag}
-    class="flex text-bg md:m-10 m-2 md:p-5 p-2 w-full flex-col items-center bg-secondary border border-gray-200 rounded-lg shadow md:flex-row md:max-w-6xl hover:bg-primary/40 dark:border-gray-700 dark:bg-secondary/70 dark:hover:bg-primary/90"
+    class="flex text-bg md:m-10 m-2 md:p-5 p-2 w-full flex-col items-center bg-secondary border border-gray-200 rounded-lg shadow md:flex-row md:max-w-6xl hover:bg-primary/40 dark:border-gray-700 dark:bg-secondary dark:hover:bg-bg/90"
 >
-    <Image
+    <img
         class="object-cover rounded-t-lg w-[60%] md:w-full md:max-w-40 min-w-20 md:h-auto md:rounded-none md:rounded-s-lg"
-        src={imgPlaceholder}
+        src={"./src/assets/Main" + data.base_image}
         alt=""
     />
     <div class="flex w-full flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100">
             {data.title}
         </h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-white">

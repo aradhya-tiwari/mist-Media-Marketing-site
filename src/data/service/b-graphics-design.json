@@ -1,0 +1,46 @@
+{
+    "slag": "graphics-design",
+    "title": "Graphics Designing",
+    "base_image": "/Graphic Designing-min.jpg",
+    "images": [
+        "ambiance"
+    ],
+    "desc": "Transform your brand with our professional Graphic Designing services. Our talented designers create perfect graphics that captivate your audience and elevate your visual presence. From logo design to comprehensive branding, we ensure every element aligns with your vision and goals. With our creativity and attention to detail, we help your brand stand out in the crowded market. Let’s design your success and make your brand unforgettable!",
+    "sub_services": [
+        {
+            "title": "Social Media Banner ",
+            "image": "./imagePlaceholder.svg",
+            "desc": "Social Media Banner to make them look attractive"
+        },
+        {
+            "title": "Print Creatives",
+            "image": "./imagePlaceholder.svg",
+            "desc": "Get best print creatives"
+        },
+        {
+            "title": "Logo Design",
+            "image": "./imagePlaceholder.svg",
+            "desc": "A logo that defines you organisation"
+        },
+        {
+            "title": "Flyers Design",
+            "image": "./imagePlaceholder.svg",
+            "desc": "Flyers and banners"
+        },
+        {
+            "title": "Stationary Design",
+            "image": "./imagePlaceholder.svg",
+            "desc": "Design customised stationary"
+        },
+        {
+            "title": "Packagin Design",
+            "image": "./imagePlaceholder.svg",
+            "desc": "Packaging for you products and whitelabels"
+        },
+        {
+            "title": "Business Card Design",
+            "image": "./imagePlaceholder.svg",
+            "desc": "Design professional looking Business card "
+        }
+    ]
+}

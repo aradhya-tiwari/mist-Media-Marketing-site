@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import Socials from "./Socials.svelte";
     let hamToggle = false;
     function toggleHam() {
         hamToggle = !hamToggle;
@@ -30,45 +31,58 @@
         class="md:w-[60%] h-screen md:h-full w-0 absolute justify-center md:static left-0 mt-[90vh] md:mt-0 text-center items-center bg-bg/90 backdrop:blur-lg md:bg-bg/10 overflow-hidden md:overflow-visible flex flex-col md:flex-row z-10 text-xl transition-all"
         class:w-[100%]={hamToggle}
     >
-        <li class="m-10">
+        <li class="m-10 hover:text-primary">
             <a href="/">Home</a>
         </li>
 
         <hr class="md:hidden bg-slate-800 w-3/4 text-center opacity-30" />
-        <li class="m-10"><a href="/#about">About</a></li>
+        <li class="m-10 hover:text-primary"><a href="/#about">About</a></li>
         <hr class="bg-slate-800 md:hidden w-3/4 text-center opacity-30" />
-        <li class="m-10 relative" id="service">
+        <li class="m-10 relative hover:text-primary" id="service">
             <a href="/services">Service </a>
             <div
-                class="hidden gun rounded-lg p-2 h-auto w-max absolute bg-primary text-black"
+                class="hidden gun rounded-lg p-2 h-auto w-max absolute bg-bg text-white"
             >
-                <p class="p-2 border-b border-[#7d7d7d]">
-                    <a href="/services/photography">Photography</a>
+                <p class="p-2 border-b border-[#2a2a2a]">
+                    <a
+                        href="/services/digital-marketing"
+                        class="hover:text-primary">Digital Marketing</a
+                    >
                 </p>
-                <p class="p-2 border-b border-[#7d7d7d]">
-                    <a href="/services/digi-marketing">Digital Marketing</a>
+                <p class="p-2 border-b border-[#2a2a2a]">
+                    <a
+                        href="/services/graphics-design"
+                        class="hover:text-primary">Graphics Design</a
+                    >
                 </p>
-                <p class="p-2 border-b border-[#7d7d7d]">
-                    <a href="/services/dev">Development</a>
+                <p class="p-2 border-b border-[#2a2a2a]">
+                    <a href="/services/digital-pr" class="hover:text-primary"
+                        >Digital PR</a
+                    >
                 </p>
-                <p class="p-2 border-b border-[#7d7d7d]">
-                    <a href="/services/weddingshoot">Wedding Shoot</a>
+                <p class="p-2 border-b border-[#2a2a2a]">
+                    <a href="/services/photography" class="hover:text-primary"
+                        >Photography</a
+                    >
                 </p>
             </div>
         </li>
         <hr class="bg-slate-800 md:hidden w-3/4 text-center opacity-30" />
-        <li class="m-10"><a href="/blogs">Blogs</a></li>
+        <li class="m-10 hover:text-primary"><a href="/blogs">Blogs</a></li>
         <hr class="bg-slate-800 md:hidden w-3/4 text-center opacity-30" />
+        <li class="m-10 hover:text-primary"><a href="/contact">Contact</a></li>
+        <hr class="bg-slate-800 md:hidden w-3/4 text-center opacity-30" />
+
         <div
-            class="mt-10 max-w-60 md:hidden text-xl text-black bg-primary px-4 py-4 rounded-full font-semibold"
+            class="mt-10 max-w-60 md:hidden text-xl text-black px-4 py-4 font-semibold"
         >
-            Reach Out to Us
+            <Socials />
         </div>
     </ul>
     <div
-        class="md:text-xl md:block hidden text-base text-black bg-primary px-4 py-20 rounded-full font-semibold"
+        class="md:text-xl md:block hidden text-base text-black px-4 font-semibold"
     >
-        <a href="/contact?for="> Reach Out to Us </a>
+        <Socials />
     </div>
     <i
         class="md:hidden mx-10 z-20 text-primary scale-150 cursor-pointer hover:scale-125"

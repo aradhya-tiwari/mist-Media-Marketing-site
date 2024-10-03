@@ -105,7 +105,6 @@ let imgg = getImg["/src/assets/Main" + e.base_image]() as any;
             </p>
         </div>
 
-        <Gallery first={img1} second={img2} third={img3} fourth={img4} />
         <!-- sub service Section -->
         {
             e.sub_services ? (
@@ -153,6 +152,7 @@ let imgg = getImg["/src/assets/Main" + e.base_image]() as any;
             )
         }
     </div>
+    <Gallery first={img1} second={img2} third={img3} fourth={img4} />
 </Layout>
 <script>
     let btnr = document.querySelector("#scroll-right");

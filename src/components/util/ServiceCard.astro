@@ -12,18 +12,22 @@ const _img = import.meta.glob<{ default: ImageMetadata }>(
     "/src/assets/Main/*.jpg",
 );
 let img = _img[`/src/assets/Main${src || "/imagePlaceholder.svg"}`]() as any;
-console.log(_img["/src/assets/Main/wedding.jpg"]());
+console.log(
+    _img["/src/assets/Main/wedding.jpg"](),
+    "\n :From service component",
+);
 ---
 
 <div
     id="serv"
     class="flex relative flex-col justify-between w-60 md:w-80 rounded-lg md:h-[500px] h-[450px] md:m-12 m-6 border-2 border-secondary shadow-lg hover:scale-110 transition-all hover:shadow-primary bg-bg"
 >
-    <div class="w-[80%] h-[50%] m-auto my-[1%] overflow-hidden">
+    <div class="mx-[1%] h-full m-auto my-[1%] overflow-hidden">
         <Image src={img || "/imagePlaceholder.svg"} alt="" />
     </div>
     <div
-        class="w-full absolute bottom-0 h-[60%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary hover:h-[90%] transition-all"
+        id="contentBox"
+        class="w-full absolute bottom-0 h-[40%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary transition-all"
     >
         <h1 class="m-5 md:text-2 xl text-xl font-semibold font-primaryFont">
             {title}
@@ -36,18 +40,16 @@ console.log(_img["/src/assets/Main/wedding.jpg"]());
                 class="bg-gradient-to-b from-transparent to-secondary w-full absolute h-10 bottom-0 left-0"
             ></span>
         </p>
-        <div class="absolute bottom-5 w-full">
+        <div class="absolute bottom-5 w-full hidden" id="reachOut">
             <div
-                id="reachOut"
-                class="md:text-xl hidden cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold hover:scale-110 transition-all"
+                class="md:text-xl cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold transition-all"
             >
                 <a href={`/contact?for=Enquiry for ${title} service`}
                     >Reach Out to Us</a
                 >
             </div>
             <div
-                id="reachOut"
-                class="md:text-xl hidden cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold hover:scale-110 transition-all"
+                class="md:text-xl cursor-pointer my-2 text-base text-black w-[80%] m-auto bg-primary md:px-5 md:py-2 px-2 py-1 rounded-full font-semibold transition-all"
             >
                 <a href={`/services/${link}`}>More Info</a>
             </div>
@@ -57,6 +59,10 @@ console.log(_img["/src/assets/Main/wedding.jpg"]());
 <style>
     #serv:hover #reachOut {
         display: block;
+    }
+    #serv:hover #contentBox {
+        display: block;
+        height: 90%;
     }
 </style>
 <script></script>
