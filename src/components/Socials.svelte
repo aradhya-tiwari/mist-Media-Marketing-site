@@ -124,6 +124,6 @@
 
 <style>
     .icon-color {
-        @apply text-primary;
+        @apply text-blue-200;
     }
 </style>

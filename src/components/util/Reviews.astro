@@ -14,7 +14,7 @@ let getImg = import.meta.glob<{ default: ImageMetadata }>(
     "/src/assets/reviewsImage/*.jpg",
 );
 // console.log(getImg);
-console.log("/src/assets/reviewsImage/" + image);
+// console.log("/src/assets/reviewsImage/" + image);
 let img = getImg["/src/assets/reviewsImage/" + image]() as any;
 ---
 

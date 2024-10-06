@@ -1,12 +1,16 @@
-<script></script>
+---
+import cta from "../assets/main/logo_black.png";
+import { Image } from "astro:assets";
+---
+
 <div
     class="md:h-[100vh] h-[70vh] w-auto items-start flex flex-col justify-between md:items-center relative"
 >
-    <img
-        src="/logo_black.png"
-        alt=""
-        srcset=""
-        class="md:w-[80vw] md:h-[40%] h-[50%] flex m-auto mt-48"
+    <Image
+        src={cta}
+        alt="Main image"
+        srcset="Main image"
+        class="md:w-[80vw] w-[98vw] flex m-auto mt-48"
         id="logo"
     />
     <p

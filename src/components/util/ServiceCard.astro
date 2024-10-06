@@ -9,28 +9,35 @@ function truncate(str: string, len: number) {
 }
 
 const _img = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/assets/Main/*.jpg",
+    "/src/assets/main/*.(jpg|svg)",
 );
-let img = _img[`/src/assets/Main${src || "/imagePlaceholder.svg"}`]() as any;
-console.log(
-    _img["/src/assets/Main/wedding.jpg"](),
-    "\n :From service component",
-);
+
+let img = _img[`/src/assets/main${src}`];
+let finalSrc: any;
+if (img) finalSrc = img();
+else finalSrc = _img["/src/assets/main/imagePlaceholder.svg"]();
+
+console.log(_img["/src/assets/main/imagePlaceholder.svg"]());
 ---
 
 <div
     id="serv"
-    class="flex relative flex-col justify-between w-60 md:w-80 rounded-lg md:h-[500px] h-[450px] md:m-12 m-6 border-2 border-secondary shadow-lg hover:scale-110 transition-all hover:shadow-primary bg-bg"
+    class="flex relative flex-col justify-between w-60 md:w-80 rounded-lg md:h-[500px] h-[450px] md:m-12 m-6 border-4 border-secondary shadow-lg hover:scale-110 transition-all hover:shadow-primary bg-bg"
 >
-    <div class="mx-[1%] h-full m-auto my-[1%] overflow-hidden">
-        <Image src={img || "/imagePlaceholder.svg"} alt="" />
+    <div class="mx-[1%] h-[60%] m-auto my-[1%] overflow-hidden relative">
+        <div class="absolute w-full h-full bg-black/70"></div>
+        <h1
+            class="absolute translate-x-[-50%] text-primary text-center w-full translate-y-[-50%] left-[50%] top-[50%] md:text-2 px-[2%] text-2xl font-semibold font-primaryFont"
+        >
+            {title}
+        </h1>
+        <Image src={finalSrc} alt="" />
     </div>
     <div
         id="contentBox"
         class="w-full absolute bottom-0 h-[40%] rounded-t-[2.5rem] rounded-b-md overflow-hidden text-white bg-secondary transition-all"
     >
         <h1 class="m-5 md:text-2 xl text-xl font-semibold font-primaryFont">
-            {title}
         </h1>
         <p
             class="relative mx-5 mt-5 md:text-lg text-sm h-auto pb-10 tracking-wider overflow-hidden"
@@ -62,7 +69,7 @@ console.log(
     }
     #serv:hover #contentBox {
         display: block;
-        height: 90%;
+        height: 100%;
     }
 </style>
 <script></script>

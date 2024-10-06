@@ -1,46 +1,42 @@
 {
     "slag": "graphics-design",
     "title": "Graphics Designing",
-    "base_image": "/Graphic Designing-min.jpg",
+    "base_image": "/Graphic Designing.jpg",
     "images": [
         "ambiance"
     ],
-    "desc": "Transform your brand with our professional Graphic Designing services. Our talented designers create perfect graphics that captivate your audience and elevate your visual presence. From logo design to comprehensive branding, we ensure every element aligns with your vision and goals. With our creativity and attention to detail, we help your brand stand out in the crowded market. Let’s design your success and make your brand unforgettable!",
+    "desc": "Transform your brand with our professional Graphic Designing services. Our designers create perfect graphics that captivate and elevate your visual presence. Let's design your success!",
+    "description": "Transform your brand with our professional Graphic Designing services. Our talented designers create perfect graphics that captivate your audience and elevate your visual presence. From logo design to comprehensive branding, we ensure every element aligns with your vision and goals. With our creativity and attention to detail, we help your brand stand out in the crowded market. Let’s design your success and make your brand unforgettable!",
     "sub_services": [
         {
-            "title": "Social Media Banner ",
+            "title": "Social Media Banner",
             "image": "./imagePlaceholder.svg",
-            "desc": "Social Media Banner to make them look attractive"
+            "desc": " Make a statement on social media with our eye-catching banners designed to captivate and engage."
         },
         {
-            "title": "Print Creatives",
+            "title": "Print Creatives(Logo Design)",
             "image": "./imagePlaceholder.svg",
-            "desc": "Get best print creatives"
+            "desc": "Create a strong brand identity with our custom logo designs, perfect for all your print materials."
         },
         {
-            "title": "Logo Design",
+            "title": "Flyers ",
             "image": "./imagePlaceholder.svg",
-            "desc": "A logo that defines you organisation"
+            "desc": "promote your events and offers with professionally designed flyers that grab attention and drive action."
         },
         {
-            "title": "Flyers Design",
+            "title": "Stationary",
             "image": "./imagePlaceholder.svg",
-            "desc": "Flyers and banners"
+            "desc": "Showcase your brand’s professionalism with our elegant and well-designed stationary."
         },
         {
-            "title": "Stationary Design",
+            "title": "Packagin ",
             "image": "./imagePlaceholder.svg",
-            "desc": "Design customised stationary"
-        },
-        {
-            "title": "Packagin Design",
-            "image": "./imagePlaceholder.svg",
-            "desc": "Packaging for you products and whitelabels"
+            "desc": "Stand out on the shelves with our innovative packaging designs, making your products irresistible."
         },
         {
             "title": "Business Card Design",
             "image": "./imagePlaceholder.svg",
-            "desc": "Design professional looking Business card "
+            "desc": ": Leave a lasting impression with our bespoke business card designs, reflecting your brand’s style and sophistication. "
         }
     ]
 }

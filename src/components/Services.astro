@@ -17,7 +17,7 @@ const { data } = Astro.props;
                 services.map((el) => (
                     <ServiceCard
                         title={`${el.title} Service`}
-                        description={el.desc.slice(0, 50)}
+                        description={el.desc}
                         link={el.slag}
                         src={`${el.base_image}`}
                     />

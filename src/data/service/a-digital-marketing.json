@@ -1,31 +1,27 @@
 {
     "slag": "digital-marketing",
     "title": "Digital Marketing",
-    "base_image": "/Digital Marketing-min.jpg",
+    "base_image": "/Digital Marketing.jpg",
     "images": [
         "../../assets/ambiance/*.jpg"
     ],
-    "desc": "Boost your business with our expert Digital Marketing services! We excel in online marketing to enhance your internet presence and turn clicks into loyal customers. Our tailored strategies ensure maximum visibility, engagement, and conversion rates, driving growth and success. Let’s work together to grow your brand, achieve your online goals, and surpass your competition!",
+    "desc": "Boost your business with our expert Digital Marketing services! We excel in online marketing to enhance your internet presence and turn clicks into customers. Let’s grow your brand online!",
+    "description": "Boost your business with our expert Digital Marketing services! We excel in online marketing to enhance your internet presence and turn clicks into loyal customers. Our tailored strategies ensure maximum visibility, engagement, and conversion rates, driving growth and success. Let’s work together to grow your brand, achieve your online goals, and surpass your competition!",
     "sub_services": [
         {
-            "title": "Organic Marketing",
+            "title": "Social Media",
             "image": "./imagePlaceholder.svg",
-            "desc": "Build you brand through organic reach via social media"
+            "desc": "Boost your brand’s online presence with our tailored social media strategies, engaging your audience and driving growth."
         },
         {
-            "title": "Advertisement",
+            "title": "SEO",
             "image": "./imagePlaceholder.svg",
-            "desc": "Advertise your Content across platforms"
-        },
-        {
-            "title": "Social Media Marketing",
-            "image": "./imagePlaceholder.svg",
-            "desc": "Give you an exceptional online presence"
+            "desc": " Increase your website’s visibility and attract more visitors with our effective SEO techniques."
         },
         {
             "title": "Influencer Marketing",
             "image": "./imagePlaceholder.svg",
-            "desc": "Hire Influencer to endorse your brand"
+            "desc": "Partner with influencers to expand your brand’s reach and connect with a wider, engaged audience."
         },
         {
             "title": "Performance Marketing",
@@ -35,7 +31,12 @@
         {
             "title": "Content Marketing",
             "image": "./imagePlaceholder.svg",
-            "desc": "Provide SEO friendly content as Content is the king"
+            "desc": "Craft compelling content that resonates with your audience and boosts your brand’s authority and conversions."
+        },
+        {
+            "title": "Ads Management:",
+            "image": "./imagePlaceholder.svg",
+            "desc": "Get the best results from your ad campaigns with our targeted ads management, reaching the right audience at the right time."
         }
     ]
 }

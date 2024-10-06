@@ -21,8 +21,8 @@
 
 <header
     id="header"
-    class="w-full h-[8vh] p-1 py-2 shadow-sm shadow-secondary text-white bg-bg/10 z-40 items-center justify-between md:px-5 bg-red flex"
-    class:fixIt={sticky}
+    class="w-full h-[8vh] fixIt p-1 py-2 shadow-sm shadow-secondary text-white bg-bg/10 z-40 items-center justify-between md:px-5 bg-red flex"
+    class:fixItt={sticky}
 >
     <p class="logo w-auto mx-5 h-full">
         <img src="/logo_white.svg" alt="" srcset="" class="h-full" />
