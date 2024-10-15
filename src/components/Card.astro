@@ -5,29 +5,36 @@ const {
 	link = "#",
 	img = "/imagePlaceholder.svg",
 } = Astro.props;
+
+import Image from "astro/components/Image.astro";
+let finalImage = import.meta.glob("/src/assets/main/*.{jpg,svg,png}");
+let imgPath = "/src/assets/main/imagePlaceholder.svg";
+if (finalImage[`/src/assets/main${img}`]) imgPath = `/src/assets/main${img}`;
+console.log(img);
+// console.log(await finalImage["../assets/main" + img](), "------------->", img);
 ---
 
 <div
-	class="max-w-sm w-64 h-auto md:p-6 p-2 md:mx-5 mx-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-secondary dark:border-gray-700"
+	class="max-w-sm w-64 h-auto md:p-6 p-2 md:mx-5 mx-2 border rounded-lg shadow bg-secondary border-gray-700"
 >
-	<img src={img} alt="" width="100" class="m-auto" />
-	<a href="#">
-		<div class="w-80"></div>
-		<h5
-			class="mb-2 px-2 text-center md:text-2xl text-xl font-bold tracking-tight text-gray-900 dark:text-white"
-		>
-			{title}
-		</h5>
-		<p class="text-sm">{explanation}</p>
-	</a>
-	<!-- <p
-		class="mb-3 text-sm px-2 text-justify font-normal h-auto w-[80%] text-gray-700 dark:text-gray-400"
-	>
-		{explanation}
-	</p> -->
+	<div class="relative w-auto h-auto">
+		<div class="absolute w-full h-full bg-black/70">
+			<h5
+				class="text-center translate-y-[35%] h-full md:text-2xl text-xl text-white"
+			>
+				{title}
+			</h5>
+		</div>
+		<Image src={finalImage[imgPath]() as any} alt={title} class="w-full" />
+	</div>
+
+	<div class="w-96"></div>
+
+	<p class="m-2 mt-5">{explanation}</p>
+
 	<a
 		href={link}
-		class="flex m-auto mt-10 justify-center w-[80%] items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+		class="flex m-auto mt-10 justify-center w-[80%] items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
 	>
 		Consult Us
 		<svg

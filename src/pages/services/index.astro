@@ -3,14 +3,25 @@ import ServiceCardLong from "../../components/util/ServiceCardLong.astro";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.svelte";
 const services = await Astro.glob("../../data/service/*.json");
-import Img from "../../assets/main/Digital Marketing.jpg";
+import Img from "../../assets/main/Social Media Banner.jpg";
 import { Image } from "astro:assets";
 ---
 
 <Layout title="Services">
     <Header client:load />
-    <div class="m-auto">
-        <Image src={Img} alt="" class="m-auto" />
+    <div class="m-auto h-auto w-full">
+        <div class="w-full h-full bg-black/60 absolute text-white">
+            <p
+                class="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl md:text-6xl"
+            >
+                Services
+            </p>
+        </div>
+        <Image
+            src={Img}
+            alt=""
+            class="m-auto md:h-[95vh] h-auto md:w-auto w-[95vh]"
+        />
     </div>
     <div class="pt-20 md:p-10 p-2 m-auto rounded-2xl md:w-[80%] w-[95%]">
         <h1 class="text-4xl text-white">Services</h1>

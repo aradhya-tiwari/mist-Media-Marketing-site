@@ -1,10 +1,10 @@
 ---
-import ContactUs from "../components/Contact.astro";
+import ContactUs from "../components/Contact.svelte";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.svelte";
 ---
 
 <Layout title="Contact Us">
     <Header client:load />
-    <ContactUs />
+    <ContactUs client:load />
 </Layout>

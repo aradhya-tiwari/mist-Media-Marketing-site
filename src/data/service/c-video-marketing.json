@@ -1,36 +1,37 @@
 {
     "slag": "video-marketing",
     "title": "Video Marketing",
-    "base_image": "/Graphic Designing.jpg",
+    "base_image": "/Reels.jpg",
     "images": [
         "ambiance"
     ],
     "desc": "Connect with your audience through our video marketing services. We craft everything from motion graphics and reels to whiteboard animations and corporate videos, bringing your message to life. Let us help boost your brand’s visibility and captivate your audience with engaging video content.",
-    "description": "Connect with your audience through our expert video marketing services. We create everything from dynamic motion graphics and engaging reels to informative whiteboard animations and professional corporate videos. Our team brings your message to life with visually compelling content that resonates with your target audience. Whether you need a captivating logo animation or a polished video presentation, we’ve got you covered. Let us help boost your brand’s visibility, enhance engagement, and drive growth with top-notch video content.",
+    "description": "Connect with your audience through our expert video marketing services. We create everything from dynamic motion graphics and engaging reels to informative whiteboard animations and professional corporate videos. Our team brings your message to life with visually compelling content that resonates with your target audience. Whether you need a captivating logo animation or a polished video presentation, we’ve got you covered. Boost your brand’s visibility, enhance engagement, and drive growth with top-notch video content.",
+    "behance": "https://www.behance.net/embed/project/209752173?ilo0=1",
     "sub_services": [
         {
             "title": "Motion Graphic:",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Motion Graphic.jpg",
             "desc": "Engage your audience with dynamic motion graphics that deliver your message in a captivating way.: "
         },
         {
             "title": "Reels",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Reels.jpg",
             "desc": "Boost your social media presence with creative reels that capture attention and increase engagement."
         },
         {
             "title": "Whiteboard ",
-            "image": "./imagePlaceholder.svg",
+            "image": "/whiteboard.png",
             "desc": "Make complex ideas simple and memorable with our whiteboard animations."
         },
         {
             "title": "Corporate Sheet",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Corporate Shoot.jpg",
             "desc": "Enhance your corporate communications with our polished video presentations."
         },
         {
             "title": "Logo Animation ",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Logo animation.jpg",
             "desc": "Bring your brand to life with custom logo animations, adding a dynamic touch to your visual identity."
         }
     ]

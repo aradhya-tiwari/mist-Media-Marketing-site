@@ -1,26 +1,27 @@
 {
     "slag": "photography",
     "title": " Photography, Video, Reel",
-    "base_image": "/food.jpg",
+    "base_image": "/photographyy.jpg",
     "images": [
         "food"
     ],
     "desc": "Explore our Photography Services for professional and captivating photos. We specialize in creating stunning images that tell your story and leave a lasting impression.",
     "description": "Explore our Photography Services for professional and captivating photos. We specialize in creating stunning images that tell your story and leave a lasting impression. Whether it's a personal portrait, a corporate event, or a product shoot, our skilled photographers bring creativity and expertise to every project. We focus on capturing the essence and emotion of each moment, ensuring that your photos are not only beautiful but also meaningful. Let us help you create memories that last a lifetime!",
+    "behance": "https://www.behance.net/embed/project/209267647?ilo0=1",
     "sub_services": [
         {
-            "title": "Portrait Photography:",
-            "image": "./imagePlaceholder.svg",
+            "title": "Portrait Photography",
+            "image": "/photographyy.jpg",
             "desc": "Capture your unique story with our professional portrait photography. "
         },
         {
-            "title": "Corporate Event Photography:",
-            "image": "./imagePlaceholder.svg",
+            "title": "Corporate Event Photography",
+            "image": "/Corporate Shoot.jpg",
             "desc": "Document your corporate events beautifully with our expert photography services. "
         },
         {
-            "title": "Product Shoot:",
-            "image": "./imagePlaceholder.svg",
+            "title": "Product Shoot",
+            "image": "/imagePlaceholder.svg",
             "desc": " Make your products stand out with high-quality product photography. "
         }
     ]

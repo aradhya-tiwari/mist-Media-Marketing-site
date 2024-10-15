@@ -2,20 +2,20 @@
     "slag": "food-reel-videography-photography",
     "title": "Food Photography, Video, and Reel Services",
     "images": [
-        "ambiance"
+        "/main"
     ],
-    "base_image": "/Videography & Photography-min.jpg",
+    "base_image": "/foodmain.jpg",
     "desc": "Capture your culinary creations with our Food Photography and Video services. From creative food photoshoots to HD Instagram reel videos, we make your dishes shine!",
     "description": " Capture your culinary creations with our top-notch Food Photography and Video services. From creative and visually stunning food photoshoots to high-definition Instagram reel videos, we make your dishes shine and stand out. Our team ensures that every detail is captured perfectly, highlighting the textures, colors, and flavors of your dishes. Let us help you showcase your culinary masterpieces and engage your audience like never before!",
     "sub_services": [
         {
             "title": "Food Photography:",
-            "image": "./imagePlaceholder.svg",
+            "image": "/food.jpg",
             "desc": " Show off your culinary creations with stunning photos that highlight the textures and flavors of your dishes"
         },
         {
             "title": "Food Video and Reels:",
-            "image": "./imagePlaceholder.svg",
+            "image": "/food2.jpg",
             "desc": " Engage your audience with high-quality food videos and reels that capture the essence of your culinary masterpieces."
         }
     ]

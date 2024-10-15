@@ -1,41 +1,42 @@
 {
     "slag": "graphics-design",
-    "title": "Graphics Designing",
+    "title": "Designing",
     "base_image": "/Graphic Designing.jpg",
     "images": [
         "ambiance"
     ],
     "desc": "Transform your brand with our professional Graphic Designing services. Our designers create perfect graphics that captivate and elevate your visual presence. Let's design your success!",
     "description": "Transform your brand with our professional Graphic Designing services. Our talented designers create perfect graphics that captivate your audience and elevate your visual presence. From logo design to comprehensive branding, we ensure every element aligns with your vision and goals. With our creativity and attention to detail, we help your brand stand out in the crowded market. Let’s design your success and make your brand unforgettable!",
+    "behance": "https://www.behance.net/embed/project/209266443?ilo0=1",
     "sub_services": [
         {
             "title": "Social Media Banner",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Social Media Banner.jpg",
             "desc": " Make a statement on social media with our eye-catching banners designed to captivate and engage."
         },
         {
             "title": "Print Creatives(Logo Design)",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Logo Design.jpg",
             "desc": "Create a strong brand identity with our custom logo designs, perfect for all your print materials."
         },
         {
             "title": "Flyers ",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Flyers.jpg",
             "desc": "promote your events and offers with professionally designed flyers that grab attention and drive action."
         },
         {
             "title": "Stationary",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Stationary.jpg",
             "desc": "Showcase your brand’s professionalism with our elegant and well-designed stationary."
         },
         {
-            "title": "Packagin ",
-            "image": "./imagePlaceholder.svg",
+            "title": "Packaging",
+            "image": "/Packaging.jpg",
             "desc": "Stand out on the shelves with our innovative packaging designs, making your products irresistible."
         },
         {
             "title": "Business Card Design",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Business Card Designs.jpg",
             "desc": ": Leave a lasting impression with our bespoke business card designs, reflecting your brand’s style and sophistication. "
         }
     ]

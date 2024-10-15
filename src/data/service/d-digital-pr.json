@@ -1,6 +1,6 @@
 {
     "slag": "digital-pr",
-    "title": "PDigital PR & Branding",
+    "title": "Digital PR & Branding",
     "base_image": "/digiPR.jpg",
     "images": [
         "portfolio"
@@ -10,22 +10,22 @@
     "sub_services": [
         {
             "title": "Strategic Communication:",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Corporate Shoot.jpg",
             "desc": "Strengthen your brand’s reputation with consistent and effective messaging through our strategic communication services. "
         },
         {
             "title": "Media Relations: ",
-            "image": "./imagePlaceholder.svg",
+            "image": "/mediaRelations.jpg",
             "desc": "Build valuable media relationships and secure coverage with our expert media relations services."
         },
         {
             "title": "Reputation Management: ",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Reputation management.jpg",
             "desc": "Protect and enhance your brand’s reputation with our proactive reputation management strategies."
         },
         {
             "title": "Targeted Campaigns:",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Targeted campaiagns.jpg",
             "desc": "Reach your branding goals with our targeted PR campaigns designed to connect with your specific audience."
         }
     ]

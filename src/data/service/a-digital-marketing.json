@@ -7,35 +7,36 @@
     ],
     "desc": "Boost your business with our expert Digital Marketing services! We excel in online marketing to enhance your internet presence and turn clicks into customers. Let’s grow your brand online!",
     "description": "Boost your business with our expert Digital Marketing services! We excel in online marketing to enhance your internet presence and turn clicks into loyal customers. Our tailored strategies ensure maximum visibility, engagement, and conversion rates, driving growth and success. Let’s work together to grow your brand, achieve your online goals, and surpass your competition!",
+    "behance": "https://www.behance.net/embed/project/209266443?ilo0=1",
     "sub_services": [
         {
             "title": "Social Media",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Social Media Marketing.jpg",
             "desc": "Boost your brand’s online presence with our tailored social media strategies, engaging your audience and driving growth."
         },
         {
             "title": "SEO",
-            "image": "./imagePlaceholder.svg",
+            "image": "/SEO.jpg",
             "desc": " Increase your website’s visibility and attract more visitors with our effective SEO techniques."
         },
         {
             "title": "Influencer Marketing",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Logo animation.jpg",
             "desc": "Partner with influencers to expand your brand’s reach and connect with a wider, engaged audience."
         },
         {
             "title": "Performance Marketing",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Social Media Banner.jpg",
             "desc": "Use performance marketing strategies to reach wider audience"
         },
         {
             "title": "Content Marketing",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Content marketing.jpg",
             "desc": "Craft compelling content that resonates with your audience and boosts your brand’s authority and conversions."
         },
         {
             "title": "Ads Management:",
-            "image": "./imagePlaceholder.svg",
+            "image": "/Ads Management.jpg",
             "desc": "Get the best results from your ad campaigns with our targeted ads management, reaching the right audience at the right time."
         }
     ]

@@ -1,6 +1,8 @@
 <script>
     import { onMount } from "svelte";
     import Socials from "./Socials.svelte";
+
+    // import { logo } from "../assets/main/logo_black.png";
     let hamToggle = false;
     function toggleHam() {
         hamToggle = !hamToggle;
@@ -25,7 +27,7 @@
     class:fixItt={sticky}
 >
     <p class="logo w-auto mx-5 h-full">
-        <img src="/logo_white.svg" alt="" srcset="" class="h-full" />
+        <img src="/logo_black.png" alt="" srcset="" class="h-full" />
     </p>
     <ul
         class="md:w-[60%] h-screen md:h-full w-0 absolute justify-center md:static left-0 mt-[90vh] md:mt-0 text-center items-center bg-bg/90 backdrop:blur-lg md:bg-bg/10 overflow-hidden md:overflow-visible flex flex-col md:flex-row z-10 text-xl transition-all"
@@ -52,7 +54,13 @@
                 <p class="p-2 border-b border-[#2a2a2a]">
                     <a
                         href="/services/graphics-design"
-                        class="hover:text-primary">Graphics Design</a
+                        class="hover:text-primary">Design</a
+                    >
+                </p>
+                <p class="p-2 border-b border-[#2a2a2a]">
+                    <a
+                        href="/services/video-marketing"
+                        class="hover:text-primary">Video Marketing</a
                     >
                 </p>
                 <p class="p-2 border-b border-[#2a2a2a]">
@@ -60,9 +68,21 @@
                         >Digital PR</a
                     >
                 </p>
-                <p class="p-2 border-b border-[#2a2a2a]">
+                <!-- <p class="p-2 border-b border-[#2a2a2a]">
                     <a href="/services/photography" class="hover:text-primary"
                         >Photography</a
+                    >
+                </p> -->
+                <p class="p-2 border-b border-[#2a2a2a]">
+                    <a
+                        href="/services/google-listings"
+                        class="hover:text-primary">Google Listings</a
+                    >
+                </p>
+                <p class="p-2 border-b border-[#2a2a2a]">
+                    <a
+                        href="/services/web-design-development"
+                        class="hover:text-primary">Web Development & Design</a
                     >
                 </p>
             </div>

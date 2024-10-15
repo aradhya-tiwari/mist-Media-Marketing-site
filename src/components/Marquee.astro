@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 const { elements } = Astro.props;
-const _imgs = await Astro.glob("../../public/brands/*.png");
+const _imgs = await Astro.glob("../../public/brands/*.(png|jpg)");
 ---
 
 <div class="w-[98vw] overflow-hidden mt-[10vh]">
