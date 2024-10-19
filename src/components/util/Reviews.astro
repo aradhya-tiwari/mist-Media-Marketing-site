@@ -5,7 +5,6 @@ const {
     name = "name",
     image,
     company = "company",
-    title = "title",
     service = "Serivce",
     description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, animi itaque? Suscipit excepturi vero, sunt minima eveniet praesentium. Quasi obcaecati voluptates fugit iusto dignissimos officia modi numquam suscipit. Architecto deserunt magni consequuntur!",
 } = Astro.props;
@@ -81,7 +80,7 @@ let img = getImg["/src/assets/reviewsImage/" + image]() as any;
             ></path>
         </svg>
         <svg
-            class="w-4 h-4 text-gray-300 dark:text-gray-500"
+            class="w-4 h-4 text-yellow-300"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -93,9 +92,7 @@ let img = getImg["/src/assets/reviewsImage/" + image]() as any;
         </svg>
     </div>
     <br />
-    <h3 class="ms-2 text-sm font-semibold text-white">
-        {title}
-    </h3>
+    <!-- <h3 class="ms-2 text-sm font-semibold text-white"></h3> -->
 
     <p class="mb-2 text-gray-400">
         {description}

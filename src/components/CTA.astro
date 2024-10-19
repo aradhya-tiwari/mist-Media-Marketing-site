@@ -1,5 +1,6 @@
 ---
 import cta from "../assets/main/logo_black.png";
+import gif from "../assets/main/mainBg.gif";
 import { Image } from "astro:assets";
 ---
 
@@ -23,7 +24,7 @@ import { Image } from "astro:assets";
     <!-- <h1 class="text-[200px] text-center mt-10 text-white">MIST</h1> -->
 
     <div class="bg absolute -z-10">
-        <video
+        <!-- <video
             src="/mainBg.mp4"
             autoplay="true"
             loop="true"
@@ -31,33 +32,38 @@ import { Image } from "astro:assets";
             class="opacity-40 h-screen"
             playsinline="true"
         >
-        </video>
+        </video> -->
+        <Image
+            src={gif}
+            alt=" "
+            class="opacity-40 h-[60vh] md:h-auto md:w-screen"
+        />
     </div>
-</div>
-<br />
+    <br />
 
-<style>
-    .button {
-        @apply cursor-pointer md:text-2xl mt-10 max-w-80 text-lg text-bg bg-primary min-w-80 py-3 text-center rounded-lg;
-    }
-    .bg {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    #logo {
-        transition: all;
-        animation: floating 5s linear infinite;
-    }
-    @keyframes floating {
-        0% {
-            translate: 0 1rem;
+    <style>
+        .button {
+            @apply cursor-pointer md:text-2xl mt-10 max-w-80 text-lg text-bg bg-primary min-w-80 py-3 text-center rounded-lg;
         }
-        50% {
-            translate: 0 -1rem;
+        .bg {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
-        100% {
-            translate: 0 1rem;
+        #logo {
+            transition: all;
+            animation: floating 5s linear infinite;
         }
-    }
-</style>
+        @keyframes floating {
+            0% {
+                translate: 0 1rem;
+            }
+            50% {
+                translate: 0 -1rem;
+            }
+            100% {
+                translate: 0 1rem;
+            }
+        }
+    </style>
+</div>

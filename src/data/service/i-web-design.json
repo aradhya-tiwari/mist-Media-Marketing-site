@@ -1,11 +1,10 @@
 {
     "slag": "web-design-development",
     "title": "Web Designing and Development",
-    "base_image": "/webdev.png",
+    "base_image": "/webdev.jpg",
     "images": [
         "food"
     ],
     "desc": "Our Web Designing & Development service is all about creating a website that truly represents your brand while delivering a smooth, user-friendly experience on any device. We work closely with you to design a custom site that not only looks great but also helps your business grow. ",
-    "description": "Our Web Designing & Development service is all about creating a website that truly represents your brand while delivering a smooth, user-friendly experience on any device. We work closely with you to design a custom site that not only looks great but also helps your business grow. Every website we build is optimized for SEO, with clean code and fast loading times to help boost your visibility on search engines. Whether you need an e-commerce platform or a simple content management system like WordPress, we provide solutions that are easy to manage and designed to turn visitors into loyal customers. Let’s work together to build a website that doesn’t just look good but delivers real results for your business.",
-    "behance": "https://www.behance.net/embed/project/209183745?ilo0=1"
+    "description": "Our Web Designing & Development service is all about creating a website that truly represents your brand while delivering a smooth, user-friendly experience on any device. We work closely with you to design a custom site that not only looks great but also helps your business grow. Every website we build is optimized for SEO, with clean code and fast loading times to help boost your visibility on search engines. Whether you need an e-commerce platform or a simple content management system like WordPress, we provide solutions that are easy to manage and designed to turn visitors into loyal customers. Let’s work together to build a website that doesn’t just look good but delivers real results for your business."
 }

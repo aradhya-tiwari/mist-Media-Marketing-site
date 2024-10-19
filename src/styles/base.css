@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .no-scrollbar::-webkit-scrollbar-thumb {
-    /* background-color: #FFCC00; */
+    background-color: #FFCC00;
     border-radius: 999px;
     width: 10px;
 }
@@ -25,11 +25,14 @@
     background-color: gray;
 
 } */
-body::-webkit-scrollbar-track {
-    background-color: gray;
+body::-webkit-scrollbar-thumb {
+    background-color: #ebbc00;
+    /* border-radius: 40%; */
+    box-shadow: inset 3px 3px 3px #ffe789;
+    border: 20px;
 }
 
 body::-webkit-scrollbar {
-    background-color: blue;
+    background-color: rgb(43, 43, 43);
     width: 10px;
 }
